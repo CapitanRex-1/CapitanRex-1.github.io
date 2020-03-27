@@ -1,10 +1,10 @@
 $(document).ready(function () {
     let tabsItem = $('.tabs-item');
 
-    tabsItem.on('Click', function (event) {
+    tabsItem.on('click', function (event) {
         event.preventDefault();
         let activeContent = $(this).attr('href');
-        $('.visible').toggleClass('.visible');
+        $('.visible').toggleClass('visible');
         $(activeContent).toggleClass('visible');
         $('.tabs-item-active').toggleClass('tabs-item-active');
         $(this).toggleClass('tabs-item-active');
